@@ -4,10 +4,11 @@
 
 An archived-session manager for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Desktop and Web. Open "Settings → Archived" to view, restore, and delete sessions grouped by workspace.
 
-DSH 0.2.1-alpha.2 already provides archive filtering and restoration. This plugin provides a settings page and adds log deletion for sessions no longer owned by the host.
+DSH 0.2.1-rc.2 already provides archive filtering and restoration. This plugin provides a settings page and adds log deletion for sessions no longer owned by the host.
 
 ## Features
 
+- **Settings header** — plugin version beside the title, a short subtitle, and compact release-check, GitHub and issue buttons, right-aligned with tooltips below and stable positioning when the page scrolls; bulk deletion stays below the title row. Release checks compare the current version with this repository's latest stable `vX.Y.Z` GitHub Release and link to its notes; an unpublished release or failed query is reported explicitly. Checking never installs a package.
 - **Archive list** — a Settings page with search and filters, workspace cards, titles and update times, using native DSH controls and theme tokens
 - **Restore and open** — clicking a session restores it before opening its history and conversation, following DSH archive admission
 - **Unarchive** — put a session back into its workspace with one click, original position preserved
@@ -19,7 +20,7 @@ DSH 0.2.1-alpha.2 already provides archive filtering and restoration. This plugi
 
 ## Compatibility
 
-This **1.3.0** version supports `@deepseek-ai/dsh` **0.2.1-alpha.2**. Restoration uses the official Workspace API; the client uses the current Session and Workspace Controllers. Deletion also uses this version's JSONL path lookup, write lease, and Workspace operation queue, so DSH peer versions are pinned exactly.
+This **1.3.0** version supports `@deepseek-ai/dsh` **0.2.1-rc.2**. Restoration uses the official Workspace API; the client uses the current Session and Workspace Controllers. Deletion also uses this version's JSONL path lookup, write lease, and Workspace operation queue, so DSH peer versions are pinned exactly.
 
 ## Install
 
