@@ -82,3 +82,9 @@ Tests cover the Settings entry, combined filters and deletion scope, batch failu
 ## License
 
 MIT
+
+
+## Private registry distribution
+
+This build is distributed as `dsh-archive-manager` through `https://registry.antistudio.cn/`. Update checks use `https://registry.antistudio.cn/index.json`; package downloads use the npm credentials configured in the active DSH profile. GitHub hosts source code and issue reports.
+
